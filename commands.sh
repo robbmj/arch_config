@@ -58,6 +58,7 @@ ln -s ~/.projects/rust/leftwm/themes.basic_polybar current
 # restart WM mod+shift+r
 
 # install more pipewire stuff
+sudo pacman -S pipewire
 sudo pacman -S pipewire-pulse
 sudo pacman -S pavucontrol
 
@@ -65,6 +66,8 @@ sudo pacman -S pavucontrol
 cd ~/projects
 git clone https://github.com/robbmj/dotfiles.git
 cd ~
-cp ~/projects/dotfiles/.bashrc .
-cp ~/projects/dotfiles/.vimrc .
-cp ~/projects/dotfiles/.xinitrc .
+# todo loop over files
+ln -s ~/projects/dotfiles/.bashrc .bashrc
+ln -s ~/projects/dotfiles/.vimrc .vimrc
+ln -s ~/projects/dotfiles/.xinitrc .xinitrc
+ln -s ~/projects/dotfiles/.xsession .xsession
