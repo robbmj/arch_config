@@ -29,6 +29,16 @@ makepkg -si
 paru --version
 cd ~
 
+# install some things
+pacman -S amd-ucode
+paru -S bash-completion
+
+# install things needed for the desktop
+paru -S i3lock-fancy rofi rofi-wifi-menu dunst zenity arandr
+
+# install librewolf
+paru -S libre-wolf
+
 # install polybar
 paru -S polybar
 
@@ -37,6 +47,14 @@ paru -S dmenue
 
 # install leftwm
 paru -S leftwm
+
+# install i3-wm, i3lock, i3bar ...
+paru -S i3
+
+
+# install fonts
+paru -S nerd-fonts-source-code-pro
+paru -S lxappearance
 
 # install leftwm theme (alacritty was installed when I installed the OS)
 cd ~/projects/rust
@@ -71,3 +89,10 @@ ln -s ~/projects/dotfiles/.bashrc .bashrc
 ln -s ~/projects/dotfiles/.vimrc .vimrc
 ln -s ~/projects/dotfiles/.xinitrc .xinitrc
 ln -s ~/projects/dotfiles/.xsession .xsession
+
+
+
+# copy over alacritty
+mkdir -p ~/.config/alacritty
+cd ~/.config/alacrity
+ln -s ~/projects/dotfiles/.config/alacritty/alacritty.yml alacritty.yml
