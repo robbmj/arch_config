@@ -1,0 +1,52 @@
+{
+    "audio": "pipewire",
+    "bootloader": "systemd-bootctl",
+    "config_version": "2.5.0",
+    "debug": false,
+    "desktop-environment": "i3",
+    "gfx_driver": "All open-source (default)",
+    "harddrives": [
+        "/dev/nvme0n1"
+    ],
+    "mirror-region": {
+        "Canada": {
+            "http://archlinux.mirror.rafal.ca/$repo/os/$arch": true,
+            "http://mirror.cedille.club/archlinux/$repo/os/$arch": true,
+            "http://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch": true,
+            "http://mirror.its.dal.ca/archlinux/$repo/os/$arch": true,
+            "http://mirror.powerfly.ca/archlinux/$repo/os/$arch": true,
+            "http://mirror.scd31.com/arch/$repo/os/$arch": true,
+            "http://mirror.sergal.org/archlinux/$repo/os/$arch": true,
+            "http://mirror.xenyth.net/archlinux/$repo/os/$arch": true,
+            "http://mirror2.evolution-host.com/archlinux/$repo/os/$arch": true,
+            "https://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch": true,
+            "https://mirror.powerfly.ca/archlinux/$repo/os/$arch": true,
+            "https://mirror.scd31.com/arch/$repo/os/$arch": true,
+            "https://mirror.sergal.org/archlinux/$repo/os/$arch": true,
+            "https://mirror.xenyth.net/archlinux/$repo/os/$arch": true,
+            "https://mirror2.evolution-host.com/archlinux/$repo/os/$arch": true
+        }
+    },
+    "mount_point": null,
+    "nic": {
+        "dhcp": true,
+        "dns": null,
+        "gateway": null,
+        "iface": null,
+        "ip": null,
+        "type": "nm"
+    },
+    "packages": [
+        "vim",
+        "neovim",
+        "htop"
+    ],
+    "plugin": null,
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+    },
+    "script": "guided",
+    "silent": false,
+    "timezone": "America/Toronto",
+    "version": "2.5.0"
+}
