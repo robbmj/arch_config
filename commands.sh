@@ -37,7 +37,7 @@ paru -S bash-completion
 paru -S i3lock-fancy rofi rofi-wifi-menu dunst zenity arandr
 
 # install librewolf
-paru -S libre-wolf
+paru -S librewolf-bin
 
 # install polybar
 paru -S polybar
